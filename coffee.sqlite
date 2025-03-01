@@ -1,0 +1,15 @@
+CREATE TABLE coffee (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    roast_level TEXT NOT NULL,
+    grind TEXT NOT NULL,
+    taste_description TEXT NOT NULL,
+    price REAL NOT NULL,
+    package_volume REAL NOT NULL
+);
+
+INSERT INTO coffee (id, name, roast_level, grind, taste_description, price, package_volume)
+VALUES
+(1, 'Арабика', 'Средний', 'Молотый', 'Сладкий, с нотками шоколада', 500.0, 250.0),
+(2, 'Робуста', 'Сильный', 'В зернах', 'Горький, с нотками дуба', 300.0, 200.0),
+(3, 'Либерика', 'Средний', 'Молотый', 'Сладкий, с нотками фруктов', 400.0, 300.0);
